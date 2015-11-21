@@ -2,9 +2,7 @@
 基于Quartz的方法调度器
 
 /**
- * Created by huangzhenfeng on 2015/11/20 0020.
- *
- *      继承 MethodScheduler 后可以使用 registerWork 对一个无参方法设置调度的时间（用cron表达式，基于Quartz）
+ *   继承 MethodScheduler 后可以使用 registerWork 对一个无参方法设置调度的时间（用cron表达式，基于Quartz）
  */
 public class Test extends MethodScheduler
 {
