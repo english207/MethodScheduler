@@ -1,9 +1,10 @@
-package scheduler.base;
+package hzf.scheduler.simple.work;
 
+import hzf.scheduler.base.observer.IObserver;
+import hzf.scheduler.base.work.SchedulerJob;
+import hzf.scheduler.simple.observer.Subject;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
-import scheduler.observer.IObserver;
-import scheduler.observer.Subject;
 
 import java.util.HashMap;
 import java.util.List;

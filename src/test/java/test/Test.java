@@ -1,6 +1,7 @@
 package test;
 
-import scheduler.base.MethodScheduler;
+
+import hzf.scheduler.simple.work.MethodScheduler;
 
 /**
  * Created by huangzhenfeng on 2015/11/20 0020.

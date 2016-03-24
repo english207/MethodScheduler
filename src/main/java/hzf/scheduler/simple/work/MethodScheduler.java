@@ -1,8 +1,8 @@
-package scheduler.base;
+package hzf.scheduler.simple.work;
 
-import scheduler.observer.IObserver;
-import scheduler.observer.ISubject;
-import scheduler.observer.Subject;
+import hzf.scheduler.base.observer.IObserver;
+import hzf.scheduler.base.observer.ISubject;
+import hzf.scheduler.simple.observer.Subject;
 
 import java.lang.reflect.Method;
 import java.util.List;

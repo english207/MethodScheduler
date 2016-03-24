@@ -1,4 +1,7 @@
-package scheduler.observer;
+package hzf.scheduler.simple.observer;
+
+import hzf.scheduler.base.observer.IObserver;
+import hzf.scheduler.base.observer.ISubject;
 
 import java.util.*;
 
@@ -8,9 +11,7 @@ import java.util.*;
  */
 public class Subject implements ISubject<String>
 {
-
     private Map<IObserver, List<String>> mapJobList = new HashMap<IObserver, List<String>>();
-
 
     @Override
     public void register(IObserver observer, String type)
