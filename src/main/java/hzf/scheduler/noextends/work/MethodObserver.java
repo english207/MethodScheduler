@@ -55,22 +55,20 @@ public class MethodObserver extends Observer
         for (Object obj : mapJobList.keySet())
         {
             List<String> excuted_methods = mapJobList.get(obj);
-            Method[] methods = obj.getClass().getMethods();
-
             for (String excuted_method : excuted_methods)
             {
-                for (Method method : methods)
+                try
                 {
                     /**
-                     *   参数长度为0即要保障执行的方法
+                     *      参数长度为0即要保障执行的方法
                      *      所以执行的方法一定是要无参
                      */
-                    if (method.getName().equals(excuted_method) && method.getParameterTypes().length == 0)
-                    {
-                        new Thread(new MethodRunnable(method, obj)).start();
-                        break;
-                    }
+                    Method method = obj.getClass().getDeclaredMethod(excuted_method);
+
+                    new Thread(new MethodRunnable(method, obj)).start();
+                    break;
                 }
+                catch (Exception e) { e.printStackTrace(); }
             }
         }
     }
