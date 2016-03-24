@@ -1,4 +1,4 @@
-package test;
+package scheduler;
 
 
 import hzf.scheduler.simple.work.MethodScheduler;
@@ -7,7 +7,7 @@ import hzf.scheduler.simple.work.MethodScheduler;
  * Created by huangzhenfeng on 2015/11/20 0020.
  *
  */
-public class Test extends MethodScheduler
+public class TestSimple extends MethodScheduler
 {
     int i = 0;
     public void startJob()
@@ -42,7 +42,7 @@ public class Test extends MethodScheduler
 
     public static void main(String[] args)
     {
-        new Test().startJob();
+        new TestSimple().startJob();
     }
 
 }
