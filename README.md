@@ -8,7 +8,7 @@
 
 样例（Example）：
 public class TestNoExtends
-{
+{\n
     public void say()
     {
         System.out.println("say hello");
@@ -21,9 +21,9 @@ public class TestNoExtends
 }
 
 输出（Out）:
-say hello
-say hello
-say hello
-say hello
-say hello
-say hello
+say hello\n
+say hello\n
+say hello\n
+say hello\n
+say hello\n
+say hello\n
