@@ -26,6 +26,8 @@ public class RegisterCronNoExtends
     private static Map<Object, IObserver> mapObserver = new HashMap<Object, IObserver>();
     private static Map<String, Scheduler> mapScheduler= new HashMap<String, Scheduler>();
 
+    private RegisterCronNoExtends() { }
+
     private static SchedulerFactory schedulerfactory = new StdSchedulerFactory();
 
     public synchronized static Scheduler regWork(Object job, String method, String cron)
