@@ -7,7 +7,6 @@
 对一个无参方法设置调度的时间（用cron表达式，基于Quartz）
 
 样例（Example）：
-
 public class TestNoExtends
 {
     public void say()
@@ -20,3 +19,11 @@ public class TestNoExtends
         RegisterCronNoExtends.regWork(new TestNoExtends(), "say", "0/2 * * * * ? *");
     }
 }
+
+输出（Out）:
+say hello
+say hello
+say hello
+say hello
+say hello
+say hello
